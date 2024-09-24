@@ -10,7 +10,7 @@ const pythonScript = './script.py';
 
 // Função para executar o script Python
 function runPythonScript() {
-    exec(`python3 ${pythonScript}`, (error, stdout, stderr) => {
+    exec(`python ${pythonScript}`, (error, stdout, stderr) => {
         if (error) {
             console.error(`Erro ao executar o script: ${error.message}`);
             return;
@@ -24,8 +24,8 @@ function runPythonScript() {
 }
 
 // Agendar o script para rodar a cada 10 segundos
-cron.schedule('*/10 * * * *', () => {
-    console.log('Executando script Python a cada 10 minutos...');
+cron.schedule('*/1 * * * * ', () => {
+    console.log('Executando script Python a cada 10 segundos...');
     runPythonScript();
 });
 
