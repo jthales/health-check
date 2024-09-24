@@ -3,7 +3,7 @@ const { exec } = require('child_process');
 const cron = require('node-cron');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 // Caminho para o script Python
 const pythonScript = './script.py';

@@ -4,11 +4,11 @@ from pymongo import MongoClient
 
 # Conectar ao MongoDB
 client = MongoClient('mongodb://localhost:27017/')  # URL de conexão ao MongoDB
-db = client['nome_do_banco']  # Nome do banco de dados
-collection = db['nome_da_colecao']  # Nome da coleção onde as APIs estão armazenadas
+db = client['node-crud']  # Nome do banco de dados
+collection = db['items']  # Nome da coleção onde as APIs estão armazenadas
 
 # URL do webhook do Discord
-discord_webhook_url = 'https://discord.com/api/webhooks/1278738599646597273/-ATZcKQUNR7-3CJENKwaf0lLZhm10dNCVBN1TQDSDwd7HNIVTjA2rGyn6eY1sM0YgwtL'
+discord_webhook_url = 'https://discord.com/api/webhooks/1288262707497271337/UQLME7fIi9eEd8W0tpcwLPoqEOF9-q5wJkMHBcPh6m3gQfU9nKcjQdczZQUNbJwT-Tuo'
 
 # Função para buscar APIs no MongoDB
 def get_apis_from_db():
