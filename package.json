@@ -1,0 +1,16 @@
+{
+  "name": "health-check",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0",
+    "node-cron": "^3.0.3"
+  }
+}
